@@ -1,0 +1,15 @@
+server:
+  vcpu_count: 1
+  memory_size_gb: 1
+  volumes:
+    - device: /dev/xvda
+      size_gb: 8
+      type: xfs
+      mount: /
+    - device: /dev/xvdb
+      size_gb: 5
+      type: xfs
+      mount: /data
+  users:
+    - login: ec2-user
+      ssh_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCJHHkj4L8clYjIXrF9P7qTdOvX7aKj2OhD5lYiDScFkCiE1vCB+HmihSpbOBVFZya4u7nBYAWS1Bg3qqe5fiYm7AH9K+EmmaxAfFW7foc/2WdbfKIx84TLmVJ3HKUKJ35I3Eh/iX66ShqACd2lmix86Q40D05Lza4+fJbxVB3Ur70RVk9mhUfUL+AVlcErqU7fdDZdsJs/+B58F93gZsS2ex0Uz9IQim1SGsE6OHzqlexodjVxX+74XzJtys4CFU/lm8TupgZr5ANJRJUrKnFIpmPwOXoR73dw2LQbqPfs2AVi4ocrvDEqSEO4+29Jy7DOJRgVzyDSTxsQ68D6mJfZ boto3-ec2-keypair
